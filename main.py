@@ -49,8 +49,6 @@ class rectangle:
         self.L = l
         self.R = r
 
-    def udlr(self):
-        return self.U,self.D,self.L,self.R
 
     def snake_moved(self,keys):
         if keys[pygame.K_UP] or keys[pygame.K_DOWN] or keys[pygame.K_RIGHT] or self.moved == True:
