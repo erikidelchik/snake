@@ -25,7 +25,6 @@ RED = (255, 0, 0)
 PURPLE = (160,32,240)
 
 
-
 class rectangle:
     VEL = 20
     U, D, L, R = False, False, False, True
@@ -49,7 +48,6 @@ class rectangle:
         self.L = l
         self.R = r
 
-
     def snake_moved(self,keys):
         if keys[pygame.K_UP] or keys[pygame.K_DOWN] or keys[pygame.K_RIGHT] or self.moved == True:
             self.moved = True
@@ -68,7 +66,6 @@ class rectangle:
         elif right:
             self.setudlr(False, False, False, True)
             self.x += self.VEL
-
 
     def getX(self):
         return self.x
