@@ -209,7 +209,7 @@ def new_apple(snake):
     return apple
 
 def lost(snake):
-    if snake[0].getX()<0 or snake[0].getX()>WIDTH-21 or snake[0].getY()<0 or snake[0].getY()>HEIGHT-1:  #check if snake outise the boards of the screen
+    if snake[0].getX()<0 or snake[0].getX()>WIDTH-21 or snake[0].getY()<0 or snake[0].getY()>HEIGHT-21:  #check if snake outise the boards of the screen
         return True
     for i in range(1,len(snake)):
         if snake[0].getX()== snake[i].getX() and snake[0].getY()==snake[i].getY():      #check if snake eaten himself
